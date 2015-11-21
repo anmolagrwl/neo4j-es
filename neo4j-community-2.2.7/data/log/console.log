@@ -1,0 +1,421 @@
+2015-11-21 19:22:26.060+0000 INFO  [API] Setting startup timeout to: 120000ms based on 120000
+2015-11-21 19:22:35.854+0000 INFO  [API] Successfully started database
+2015-11-21 19:22:36.559+0000 INFO  [API] Starting HTTP on port :7474 with 4 threads available
+2015-11-21 19:22:37.439+0000 INFO  [API] Enabling HTTPS on port :7473
+2015-11-21 19:22:37.439+0000 INFO  [API] No SSL certificate found, generating a self-signed certificate..
+00:52:38.580 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @19615ms
+2015-11-21 19:22:38.785+0000 INFO  [API] Mounting static content at [/webadmin] from [webadmin-html]
+2015-11-21 19:22:38.952+0000 INFO  [API] Mounting static content at [/browser] from [browser]
+00:52:38.967 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.2.4.v20141103
+00:52:39.057 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.h.MovedContextHandler@4e6ef98b{/,null,AVAILABLE}
+00:52:39.233 [main] INFO  o.e.j.w.StandardDescriptorProcessor - NO JSP Support for /webadmin, did not find org.apache.jasper.servlet.JspServlet
+00:52:39.296 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.w.WebAppContext@ca74058{/webadmin,jar:file:/Users/apple/Desktop/neo4j-community-2.2.7/system/lib/neo4j-server-2.2.7-static-web.jar!/webadmin-html,AVAILABLE}
+00:52:40.743 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@67f8ce2f{/db/manage,null,AVAILABLE}
+00:52:41.122 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7fca999b{/db/data,null,AVAILABLE}
+00:52:41.146 [main] INFO  o.e.j.w.StandardDescriptorProcessor - NO JSP Support for /browser, did not find org.apache.jasper.servlet.JspServlet
+00:52:41.147 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.w.WebAppContext@271c2bd1{/browser,jar:file:/Users/apple/Desktop/neo4j-community-2.2.7/system/lib/neo4j-browser-2.2.7.jar!/browser,AVAILABLE}
+00:52:41.280 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2f5f350b{/,null,AVAILABLE}
+00:52:41.540 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@72bdf66a{HTTP/1.1}{localhost:7474}
+00:52:45.145 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@595bc7ee{SSL-HTTP/1.1}{localhost:7473}
+00:52:45.145 [main] INFO  org.eclipse.jetty.server.Server - Started @26191ms
+2015-11-21 19:22:45.146+0000 INFO  [API] Server started on: http://localhost:7474/
+2015-11-21 19:22:45.146+0000 INFO  [API] Remote interface ready and available at [http://localhost:7474/]
+2015-11-21 19:24:33.599+0000 WARN  [API] Failed authentication attempt for 'neo4j' from 127.0.0.1
+2015-11-21 19:24:33.849+0000 WARN  [API] Failed authentication attempt for 'neo4j' from 127.0.0.1
+2015-11-21 19:36:18.650+0000 INFO  [API] Neo4j Server shutdown initiated by request
+01:06:18.796 [Thread-13] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@72bdf66a{HTTP/1.1}{localhost:7474}
+01:06:18.797 [Thread-13] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@595bc7ee{SSL-HTTP/1.1}{localhost:7473}
+01:06:18.799 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@2f5f350b{/,null,UNAVAILABLE}
+01:06:18.801 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.w.WebAppContext@271c2bd1{/browser,jar:file:/Users/apple/Desktop/neo4j-community-2.2.7/system/lib/neo4j-browser-2.2.7.jar!/browser,UNAVAILABLE}
+01:06:18.847 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7fca999b{/db/data,null,UNAVAILABLE}
+01:06:18.847 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@67f8ce2f{/db/manage,null,UNAVAILABLE}
+01:06:18.849 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.w.WebAppContext@ca74058{/webadmin,jar:file:/Users/apple/Desktop/neo4j-community-2.2.7/system/lib/neo4j-server-2.2.7-static-web.jar!/webadmin-html,UNAVAILABLE}
+01:06:18.849 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.h.MovedContextHandler@4e6ef98b{/,null,UNAVAILABLE}
+2015-11-21 19:36:18.859+0000 INFO  [API] Successfully shutdown Neo4j Server.
+2015-11-21 19:36:19.138+0000 INFO  [API] Successfully stopped database
+2015-11-21 19:36:19.138+0000 INFO  [API] Successfully shutdown database.
+2015-11-21 19:36:33.737+0000 INFO  [API] Setting startup timeout to: 120000ms based on 120000
+01:06:41.791 [main] INFO  i.searchbox.client.JestClientFactory - Node Discovery Enabled...
+01:06:43.415 [NodeChecker RUNNING] ERROR i.s.c.config.discovery.NodeChecker - Error executing NodesInfo!
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:9200 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151) ~[httpclient-4.4.jar:4.4]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353) ~[httpclient-4.4.jar:4.4]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380) ~[httpclient-4.4.jar:4.4]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[httpclient-4.4.jar:4.4]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184) ~[httpclient-4.4.jar:4.4]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88) ~[httpclient-4.4.jar:4.4]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[httpclient-4.4.jar:4.4]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184) ~[httpclient-4.4.jar:4.4]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82) ~[httpclient-4.4.jar:4.4]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107) ~[httpclient-4.4.jar:4.4]
+	at io.searchbox.client.http.JestHttpClient.execute(JestHttpClient.java:47) ~[jest-0.1.5.jar:na]
+	at io.searchbox.client.config.discovery.NodeChecker.runOneIteration(NodeChecker.java:36) ~[jest-common-0.1.5.jar:na]
+	at com.google.common.util.concurrent.AbstractScheduledService$1$1.run(AbstractScheduledService.java:174) [guava-18.0.jar:na]
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:95) [guava-18.0.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471) [na:1.7.0_79]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:304) [na:1.7.0_79]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:178) [na:1.7.0_79]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.7.0_79]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_79]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_79]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_79]
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.7.0_79]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339) ~[na:1.7.0_79]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200) ~[na:1.7.0_79]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182) ~[na:1.7.0_79]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.7.0_79]
+	at java.net.Socket.connect(Socket.java:579) ~[na:1.7.0_79]
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74) ~[httpclient-4.4.jar:4.4]
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134) ~[httpclient-4.4.jar:4.4]
+	... 20 common frames omitted
+2015-11-21 19:37:13.617+0000 INFO  [API] Successfully started database
+2015-11-21 19:37:15.098+0000 INFO  [API] Starting HTTP on port :7474 with 4 threads available
+2015-11-21 19:37:18.160+0000 INFO  [API] Enabling HTTPS on port :7473
+01:07:19.555 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @56929ms
+2015-11-21 19:37:20.645+0000 INFO  [API] Mounting static content at [/webadmin] from [webadmin-html]
+2015-11-21 19:37:20.767+0000 INFO  [API] Mounting static content at [/browser] from [browser]
+01:07:20.777 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.2.4.v20141103
+01:07:20.908 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.h.MovedContextHandler@6093f9a1{/,null,AVAILABLE}
+01:07:21.181 [main] INFO  o.e.j.w.StandardDescriptorProcessor - NO JSP Support for /webadmin, did not find org.apache.jasper.servlet.JspServlet
+01:07:21.284 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.w.WebAppContext@7db75c1d{/webadmin,jar:file:/Users/apple/Desktop/neo4j-community-2.2.7/system/lib/neo4j-server-2.2.7-static-web.jar!/webadmin-html,AVAILABLE}
+01:07:22.886 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4bf56c83{/db/manage,null,AVAILABLE}
+01:07:23.314 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@8d26d0f{/db/data,null,AVAILABLE}
+01:07:23.337 [main] INFO  o.e.j.w.StandardDescriptorProcessor - NO JSP Support for /browser, did not find org.apache.jasper.servlet.JspServlet
+01:07:23.338 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.w.WebAppContext@391b2a8e{/browser,jar:file:/Users/apple/Desktop/neo4j-community-2.2.7/system/lib/neo4j-browser-2.2.7.jar!/browser,AVAILABLE}
+01:07:23.499 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@626a1904{/,null,AVAILABLE}
+01:07:23.571 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@3d5b2fb{HTTP/1.1}{localhost:7474}
+01:07:26.132 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@61aeebd0{SSL-HTTP/1.1}{localhost:7473}
+01:07:26.132 [main] INFO  org.eclipse.jetty.server.Server - Started @63604ms
+2015-11-21 19:37:26.132+0000 INFO  [API] Server started on: http://localhost:7474/
+2015-11-21 19:37:26.133+0000 INFO  [API] Remote interface ready and available at [http://localhost:7474/]
+01:07:44.012 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:08:44.033 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:09:44.064 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:10:44.084 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:11:44.091 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:12:44.133 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:13:44.162 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:14:44.171 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:15:44.194 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:16:44.264 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:17:44.270 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:18:44.278 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:19:44.315 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:20:44.344 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:21:44.353 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:22:44.360 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:23:44.366 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:24:44.372 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:25:44.411 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:26:44.419 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:27:44.425 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:28:44.431 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:29:44.437 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:30:44.444 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:31:44.519 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:32:44.599 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:33:44.638 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:34:44.680 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:35:44.718 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:36:44.755 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:37:44.792 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:38:44.867 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:39:44.929 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:40:44.972 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:41:45.018 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:42:45.087 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:43:45.115 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:44:45.135 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:45:45.172 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:46:45.206 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:47:45.212 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:48:45.248 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:49:45.268 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:50:45.308 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:51:45.312 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:52:45.319 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:53:45.324 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:54:45.328 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:55:45.394 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+01:56:45.498 [NodeChecker RUNNING] INFO  i.s.c.config.discovery.NodeChecker - Discovered Http Hosts: [http://127.0.0.1:9200]
+2015-11-21 20:27:44.590+0000 INFO  [API] Neo4j Server shutdown initiated by request
+01:57:44.876 [Thread-13] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@3d5b2fb{HTTP/1.1}{localhost:7474}
+01:57:44.877 [Thread-13] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@61aeebd0{SSL-HTTP/1.1}{localhost:7473}
+01:57:44.892 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@626a1904{/,null,UNAVAILABLE}
+01:57:44.895 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.w.WebAppContext@391b2a8e{/browser,jar:file:/Users/apple/Desktop/neo4j-community-2.2.7/system/lib/neo4j-browser-2.2.7.jar!/browser,UNAVAILABLE}
+01:57:44.916 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@8d26d0f{/db/data,null,UNAVAILABLE}
+01:57:44.916 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4bf56c83{/db/manage,null,UNAVAILABLE}
+01:57:44.918 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.w.WebAppContext@7db75c1d{/webadmin,jar:file:/Users/apple/Desktop/neo4j-community-2.2.7/system/lib/neo4j-server-2.2.7-static-web.jar!/webadmin-html,UNAVAILABLE}
+01:57:44.918 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.h.MovedContextHandler@6093f9a1{/,null,UNAVAILABLE}
+2015-11-21 20:27:45.022+0000 INFO  [API] Successfully shutdown Neo4j Server.
+2015-11-21 20:27:45.141+0000 ERROR [org.neo4j]: Exception when stopping org.neo4j.kernel.NeoStoreDataSource@4b2205fa java.io.FileNotFoundException: /Users/apple/Desktop/neo4j-community-2.2.7/data/graph.db/schema/label/lucene/_0.cfs (No such file or directory)
+org.neo4j.kernel.impl.store.UnderlyingStorageException: java.io.FileNotFoundException: /Users/apple/Desktop/neo4j-community-2.2.7/data/graph.db/schema/label/lucene/_0.cfs (No such file or directory)
+	at org.neo4j.kernel.api.impl.index.LuceneLabelScanStore.force(LuceneLabelScanStore.java:186)
+	at org.neo4j.kernel.impl.transaction.log.LogRotationControl.forceEverything(LogRotationControl.java:56)
+	at org.neo4j.kernel.NeoStoreDataSource.stop(NeoStoreDataSource.java:1206)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:546)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.impl.transaction.state.DataSourceManager.stop(DataSourceManager.java:137)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:546)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.lifecycle.LifeSupport.shutdown(LifeSupport.java:185)
+	at org.neo4j.kernel.InternalAbstractGraphDatabase.shutdown(InternalAbstractGraphDatabase.java:700)
+	at org.neo4j.server.database.LifecycleManagingDatabase.stop(LifecycleManagingDatabase.java:128)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:546)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.server.AbstractNeoServer$6.run(AbstractNeoServer.java:616)
+	at org.neo4j.helpers.RunCarefully.run(RunCarefully.java:47)
+	at org.neo4j.server.AbstractNeoServer.stop(AbstractNeoServer.java:590)
+	at org.neo4j.server.Bootstrapper$1.run(Bootstrapper.java:221)
+Caused by: java.io.FileNotFoundException: /Users/apple/Desktop/neo4j-community-2.2.7/data/graph.db/schema/label/lucene/_0.cfs (No such file or directory)
+	at java.io.RandomAccessFile.open(Native Method)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:241)
+	at org.apache.lucene.store.FSDirectory.fsync(FSDirectory.java:503)
+	at org.apache.lucene.store.FSDirectory.sync(FSDirectory.java:336)
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4557)
+	at org.apache.lucene.index.IndexWriter.prepareCommit(IndexWriter.java:3414)
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:3485)
+	at org.apache.lucene.index.IndexWriter.commit(IndexWriter.java:3467)
+	at org.apache.lucene.index.IndexWriter.commit(IndexWriter.java:3451)
+	at org.neo4j.kernel.api.impl.index.LuceneIndexWriter.commit(LuceneIndexWriter.java:92)
+	at org.neo4j.kernel.api.impl.index.LuceneLabelScanStore.force(LuceneLabelScanStore.java:182)
+	... 16 more
+2015-11-21 20:27:45.159+0000 ERROR [org.neo4j]: Exception when stopping org.neo4j.kernel.impl.transaction.state.DataSourceManager@4e56e731 Component 'org.neo4j.kernel.NeoStoreDataSource@4b2205fa' failed to stop. Please see attached cause exception.
+org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.NeoStoreDataSource@4b2205fa' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:551)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.impl.transaction.state.DataSourceManager.stop(DataSourceManager.java:137)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:546)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.lifecycle.LifeSupport.shutdown(LifeSupport.java:185)
+	at org.neo4j.kernel.InternalAbstractGraphDatabase.shutdown(InternalAbstractGraphDatabase.java:700)
+	at org.neo4j.server.database.LifecycleManagingDatabase.stop(LifecycleManagingDatabase.java:128)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:546)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.server.AbstractNeoServer$6.run(AbstractNeoServer.java:616)
+	at org.neo4j.helpers.RunCarefully.run(RunCarefully.java:47)
+	at org.neo4j.server.AbstractNeoServer.stop(AbstractNeoServer.java:590)
+	at org.neo4j.server.Bootstrapper$1.run(Bootstrapper.java:221)
+Caused by: org.neo4j.kernel.impl.store.UnderlyingStorageException: java.io.FileNotFoundException: /Users/apple/Desktop/neo4j-community-2.2.7/data/graph.db/schema/label/lucene/_0.cfs (No such file or directory)
+	at org.neo4j.kernel.api.impl.index.LuceneLabelScanStore.force(LuceneLabelScanStore.java:186)
+	at org.neo4j.kernel.impl.transaction.log.LogRotationControl.forceEverything(LogRotationControl.java:56)
+	at org.neo4j.kernel.NeoStoreDataSource.stop(NeoStoreDataSource.java:1206)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:546)
+	... 13 more
+Caused by: java.io.FileNotFoundException: /Users/apple/Desktop/neo4j-community-2.2.7/data/graph.db/schema/label/lucene/_0.cfs (No such file or directory)
+	at java.io.RandomAccessFile.open(Native Method)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:241)
+	at org.apache.lucene.store.FSDirectory.fsync(FSDirectory.java:503)
+	at org.apache.lucene.store.FSDirectory.sync(FSDirectory.java:336)
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4557)
+	at org.apache.lucene.index.IndexWriter.prepareCommit(IndexWriter.java:3414)
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:3485)
+	at org.apache.lucene.index.IndexWriter.commit(IndexWriter.java:3467)
+	at org.apache.lucene.index.IndexWriter.commit(IndexWriter.java:3451)
+	at org.neo4j.kernel.api.impl.index.LuceneIndexWriter.commit(LuceneIndexWriter.java:92)
+	at org.neo4j.kernel.api.impl.index.LuceneLabelScanStore.force(LuceneLabelScanStore.java:182)
+	... 16 more
+2015-11-21 20:27:45.235+0000 ERROR [org.neo4j]: Lifecycle exception Failed to transition component 'org.neo4j.kernel.impl.pagecache.PageCacheLifecycle@609945ce' from STOPPED to SHUTTING_DOWN. Please see attached cause exception
+org.neo4j.kernel.lifecycle.LifecycleException: Failed to transition component 'org.neo4j.kernel.impl.pagecache.PageCacheLifecycle@609945ce' from STOPPED to SHUTTING_DOWN. Please see attached cause exception
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.shutdown(LifeSupport.java:578)
+	at org.neo4j.kernel.lifecycle.LifeSupport.shutdown(LifeSupport.java:200)
+	at org.neo4j.kernel.InternalAbstractGraphDatabase.shutdown(InternalAbstractGraphDatabase.java:700)
+	at org.neo4j.server.database.LifecycleManagingDatabase.stop(LifecycleManagingDatabase.java:128)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:546)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.server.AbstractNeoServer$6.run(AbstractNeoServer.java:616)
+	at org.neo4j.helpers.RunCarefully.run(RunCarefully.java:47)
+	at org.neo4j.server.AbstractNeoServer.stop(AbstractNeoServer.java:590)
+	at org.neo4j.server.Bootstrapper$1.run(Bootstrapper.java:221)
+Caused by: java.lang.IllegalStateException: Cannot close the PageCache while files are still mapped:
+	neostore.counts.db.a (1 mapping)
+	neostore (1 mapping)
+	neostore.relationshipgroupstore.db (1 mapping)
+	neostore.schemastore.db (1 mapping)
+	neostore.nodestore.db (1 mapping)
+	neostore.nodestore.db.labels (1 mapping)
+	neostore.relationshipstore.db (1 mapping)
+	neostore.propertystore.db (1 mapping)
+	neostore.propertystore.db.arrays (1 mapping)
+	neostore.propertystore.db.strings (1 mapping)
+	neostore.propertystore.db.index (1 mapping)
+	neostore.propertystore.db.index.keys (1 mapping)
+	neostore.labeltokenstore.db (1 mapping)
+	neostore.labeltokenstore.db.names (1 mapping)
+	neostore.relationshiptypestore.db (1 mapping)
+	neostore.relationshiptypestore.db.names (1 mapping)
+	at org.neo4j.io.pagecache.impl.muninn.MuninnPageCache.close(MuninnPageCache.java:483)
+	at org.neo4j.kernel.impl.pagecache.PageCacheLifecycle.shutdown(PageCacheLifecycle.java:42)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.shutdown(LifeSupport.java:574)
+	... 9 more
+2015-11-21 20:27:45.237+0000 ERROR [org.neo4j]: Chained lifecycle exception Component 'org.neo4j.kernel.impl.transaction.state.DataSourceManager@4e56e731' failed to stop. Please see attached cause exception.
+org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.impl.transaction.state.DataSourceManager@4e56e731' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:551)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.lifecycle.LifeSupport.shutdown(LifeSupport.java:185)
+	at org.neo4j.kernel.InternalAbstractGraphDatabase.shutdown(InternalAbstractGraphDatabase.java:700)
+	at org.neo4j.server.database.LifecycleManagingDatabase.stop(LifecycleManagingDatabase.java:128)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:546)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.server.AbstractNeoServer$6.run(AbstractNeoServer.java:616)
+	at org.neo4j.helpers.RunCarefully.run(RunCarefully.java:47)
+	at org.neo4j.server.AbstractNeoServer.stop(AbstractNeoServer.java:590)
+	at org.neo4j.server.Bootstrapper$1.run(Bootstrapper.java:221)
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.NeoStoreDataSource@4b2205fa' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:551)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.impl.transaction.state.DataSourceManager.stop(DataSourceManager.java:137)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:546)
+	... 10 more
+Caused by: org.neo4j.kernel.impl.store.UnderlyingStorageException: java.io.FileNotFoundException: /Users/apple/Desktop/neo4j-community-2.2.7/data/graph.db/schema/label/lucene/_0.cfs (No such file or directory)
+	at org.neo4j.kernel.api.impl.index.LuceneLabelScanStore.force(LuceneLabelScanStore.java:186)
+	at org.neo4j.kernel.impl.transaction.log.LogRotationControl.forceEverything(LogRotationControl.java:56)
+	at org.neo4j.kernel.NeoStoreDataSource.stop(NeoStoreDataSource.java:1206)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:546)
+	... 13 more
+Caused by: java.io.FileNotFoundException: /Users/apple/Desktop/neo4j-community-2.2.7/data/graph.db/schema/label/lucene/_0.cfs (No such file or directory)
+	at java.io.RandomAccessFile.open(Native Method)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:241)
+	at org.apache.lucene.store.FSDirectory.fsync(FSDirectory.java:503)
+	at org.apache.lucene.store.FSDirectory.sync(FSDirectory.java:336)
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4557)
+	at org.apache.lucene.index.IndexWriter.prepareCommit(IndexWriter.java:3414)
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:3485)
+	at org.apache.lucene.index.IndexWriter.commit(IndexWriter.java:3467)
+	at org.apache.lucene.index.IndexWriter.commit(IndexWriter.java:3451)
+	at org.neo4j.kernel.api.impl.index.LuceneIndexWriter.commit(LuceneIndexWriter.java:92)
+	at org.neo4j.kernel.api.impl.index.LuceneLabelScanStore.force(LuceneLabelScanStore.java:182)
+	... 16 more
+2015-11-21 20:27:45.245+0000 ERROR [API] Database did not stop cleanly. Reason [Failed to transition component 'org.neo4j.kernel.impl.pagecache.PageCacheLifecycle@609945ce' from STOPPED to SHUTTING_DOWN. Please see attached cause exception]
+2015-11-21 20:27:45.246+0000 ERROR [org.neo4j]: Exception when stopping org.neo4j.server.database.LifecycleManagingDatabase@4c67db41 Failed to transition component 'org.neo4j.kernel.impl.pagecache.PageCacheLifecycle@609945ce' from STOPPED to SHUTTING_DOWN. Please see attached cause exception
+org.neo4j.kernel.lifecycle.LifecycleException: Failed to transition component 'org.neo4j.kernel.impl.pagecache.PageCacheLifecycle@609945ce' from STOPPED to SHUTTING_DOWN. Please see attached cause exception
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.shutdown(LifeSupport.java:578)
+	at org.neo4j.kernel.lifecycle.LifeSupport.shutdown(LifeSupport.java:200)
+	at org.neo4j.kernel.InternalAbstractGraphDatabase.shutdown(InternalAbstractGraphDatabase.java:700)
+	at org.neo4j.server.database.LifecycleManagingDatabase.stop(LifecycleManagingDatabase.java:128)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:546)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.server.AbstractNeoServer$6.run(AbstractNeoServer.java:616)
+	at org.neo4j.helpers.RunCarefully.run(RunCarefully.java:47)
+	at org.neo4j.server.AbstractNeoServer.stop(AbstractNeoServer.java:590)
+	at org.neo4j.server.Bootstrapper$1.run(Bootstrapper.java:221)
+Caused by: java.lang.IllegalStateException: Cannot close the PageCache while files are still mapped:
+	neostore.counts.db.a (1 mapping)
+	neostore (1 mapping)
+	neostore.relationshipgroupstore.db (1 mapping)
+	neostore.schemastore.db (1 mapping)
+	neostore.nodestore.db (1 mapping)
+	neostore.nodestore.db.labels (1 mapping)
+	neostore.relationshipstore.db (1 mapping)
+	neostore.propertystore.db (1 mapping)
+	neostore.propertystore.db.arrays (1 mapping)
+	neostore.propertystore.db.strings (1 mapping)
+	neostore.propertystore.db.index (1 mapping)
+	neostore.propertystore.db.index.keys (1 mapping)
+	neostore.labeltokenstore.db (1 mapping)
+	neostore.labeltokenstore.db.names (1 mapping)
+	neostore.relationshiptypestore.db (1 mapping)
+	neostore.relationshiptypestore.db.names (1 mapping)
+	at org.neo4j.io.pagecache.impl.muninn.MuninnPageCache.close(MuninnPageCache.java:483)
+	at org.neo4j.kernel.impl.pagecache.PageCacheLifecycle.shutdown(PageCacheLifecycle.java:42)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.shutdown(LifeSupport.java:574)
+	... 9 more
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.impl.transaction.state.DataSourceManager@4e56e731' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:551)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.lifecycle.LifeSupport.shutdown(LifeSupport.java:185)
+	... 8 more
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.NeoStoreDataSource@4b2205fa' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:551)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.impl.transaction.state.DataSourceManager.stop(DataSourceManager.java:137)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:546)
+	... 10 more
+Caused by: org.neo4j.kernel.impl.store.UnderlyingStorageException: java.io.FileNotFoundException: /Users/apple/Desktop/neo4j-community-2.2.7/data/graph.db/schema/label/lucene/_0.cfs (No such file or directory)
+	at org.neo4j.kernel.api.impl.index.LuceneLabelScanStore.force(LuceneLabelScanStore.java:186)
+	at org.neo4j.kernel.impl.transaction.log.LogRotationControl.forceEverything(LogRotationControl.java:56)
+	at org.neo4j.kernel.NeoStoreDataSource.stop(NeoStoreDataSource.java:1206)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:546)
+	... 13 more
+Caused by: java.io.FileNotFoundException: /Users/apple/Desktop/neo4j-community-2.2.7/data/graph.db/schema/label/lucene/_0.cfs (No such file or directory)
+	at java.io.RandomAccessFile.open(Native Method)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:241)
+	at org.apache.lucene.store.FSDirectory.fsync(FSDirectory.java:503)
+	at org.apache.lucene.store.FSDirectory.sync(FSDirectory.java:336)
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4557)
+	at org.apache.lucene.index.IndexWriter.prepareCommit(IndexWriter.java:3414)
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:3485)
+	at org.apache.lucene.index.IndexWriter.commit(IndexWriter.java:3467)
+	at org.apache.lucene.index.IndexWriter.commit(IndexWriter.java:3451)
+	at org.neo4j.kernel.api.impl.index.LuceneIndexWriter.commit(LuceneIndexWriter.java:92)
+	at org.neo4j.kernel.api.impl.index.LuceneLabelScanStore.force(LuceneLabelScanStore.java:182)
+	... 16 more
+Exception in thread "Thread-13" java.lang.RuntimeException: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.server.database.LifecycleManagingDatabase@4c67db41' failed to stop. Please see attached cause exception.
+	at org.neo4j.helpers.RunCarefully.run(RunCarefully.java:57)
+	at org.neo4j.server.AbstractNeoServer.stop(AbstractNeoServer.java:590)
+	at org.neo4j.server.Bootstrapper$1.run(Bootstrapper.java:221)
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.server.database.LifecycleManagingDatabase@4c67db41' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:551)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.server.AbstractNeoServer$6.run(AbstractNeoServer.java:616)
+	at org.neo4j.helpers.RunCarefully.run(RunCarefully.java:47)
+	... 2 more
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Failed to transition component 'org.neo4j.kernel.impl.pagecache.PageCacheLifecycle@609945ce' from STOPPED to SHUTTING_DOWN. Please see attached cause exception
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.shutdown(LifeSupport.java:578)
+	at org.neo4j.kernel.lifecycle.LifeSupport.shutdown(LifeSupport.java:200)
+	at org.neo4j.kernel.InternalAbstractGraphDatabase.shutdown(InternalAbstractGraphDatabase.java:700)
+	at org.neo4j.server.database.LifecycleManagingDatabase.stop(LifecycleManagingDatabase.java:128)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:546)
+	... 5 more
+Caused by: java.lang.IllegalStateException: Cannot close the PageCache while files are still mapped:
+	neostore.counts.db.a (1 mapping)
+	neostore (1 mapping)
+	neostore.relationshipgroupstore.db (1 mapping)
+	neostore.schemastore.db (1 mapping)
+	neostore.nodestore.db (1 mapping)
+	neostore.nodestore.db.labels (1 mapping)
+	neostore.relationshipstore.db (1 mapping)
+	neostore.propertystore.db (1 mapping)
+	neostore.propertystore.db.arrays (1 mapping)
+	neostore.propertystore.db.strings (1 mapping)
+	neostore.propertystore.db.index (1 mapping)
+	neostore.propertystore.db.index.keys (1 mapping)
+	neostore.labeltokenstore.db (1 mapping)
+	neostore.labeltokenstore.db.names (1 mapping)
+	neostore.relationshiptypestore.db (1 mapping)
+	neostore.relationshiptypestore.db.names (1 mapping)
+	at org.neo4j.io.pagecache.impl.muninn.MuninnPageCache.close(MuninnPageCache.java:483)
+	at org.neo4j.kernel.impl.pagecache.PageCacheLifecycle.shutdown(PageCacheLifecycle.java:42)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.shutdown(LifeSupport.java:574)
+	... 9 more
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.impl.transaction.state.DataSourceManager@4e56e731' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:551)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.lifecycle.LifeSupport.shutdown(LifeSupport.java:185)
+	... 8 more
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.NeoStoreDataSource@4b2205fa' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:551)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.impl.transaction.state.DataSourceManager.stop(DataSourceManager.java:137)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:546)
+	... 10 more
+Caused by: org.neo4j.kernel.impl.store.UnderlyingStorageException: java.io.FileNotFoundException: /Users/apple/Desktop/neo4j-community-2.2.7/data/graph.db/schema/label/lucene/_0.cfs (No such file or directory)
+	at org.neo4j.kernel.api.impl.index.LuceneLabelScanStore.force(LuceneLabelScanStore.java:186)
+	at org.neo4j.kernel.impl.transaction.log.LogRotationControl.forceEverything(LogRotationControl.java:56)
+	at org.neo4j.kernel.NeoStoreDataSource.stop(NeoStoreDataSource.java:1206)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:546)
+	... 13 more
+Caused by: java.io.FileNotFoundException: /Users/apple/Desktop/neo4j-community-2.2.7/data/graph.db/schema/label/lucene/_0.cfs (No such file or directory)
+	at java.io.RandomAccessFile.open(Native Method)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:241)
+	at org.apache.lucene.store.FSDirectory.fsync(FSDirectory.java:503)
+	at org.apache.lucene.store.FSDirectory.sync(FSDirectory.java:336)
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4557)
+	at org.apache.lucene.index.IndexWriter.prepareCommit(IndexWriter.java:3414)
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:3485)
+	at org.apache.lucene.index.IndexWriter.commit(IndexWriter.java:3467)
+	at org.apache.lucene.index.IndexWriter.commit(IndexWriter.java:3451)
+	at org.neo4j.kernel.api.impl.index.LuceneIndexWriter.commit(LuceneIndexWriter.java:92)
+	at org.neo4j.kernel.api.impl.index.LuceneLabelScanStore.force(LuceneLabelScanStore.java:182)
+	... 16 more
